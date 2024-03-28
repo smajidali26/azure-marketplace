@@ -1,0 +1,128 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/* landing page form */
+html, body {
+    background: var(--bg-color);
+}
+
+body {
+    font-family: var(--font-primary);
+    background-image: var(--background-image);
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.landing-header {
+    background-color: var(--header-bg-color);
+}
+
+.landing-body {
+    margin-top: 30px;
+    color: var(--form-text-color);
+    background-color: var(--form-bg-color);
+    box-shadow: var(--form-box-shadow);
+    border: var(--form-border);
+    border-radius: var(--form-border-radius);
+}
+
+.landing-logo {
+    background-image: var(--logo-url);
+    height: var(--logo-height);
+    width: var(--logo-width);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-heading {
+    color: var(--form-header-color);
+}
+
+.form-input {
+    width: 300px;
+}
+
+.form-button {
+    width: var(--submit-button-width);
+    background-color: var(--submit-button-bg-color);
+    border: var(--submit-button-border);
+    color: var(--submit-button-text-color);
+}
+
+.landing-footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    min-height: 85px;
+    font-size: 0.9rem;
+}
+
+    .landing-footer * a {
+        color: var(--footer-link-color) !important;
+    }
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}

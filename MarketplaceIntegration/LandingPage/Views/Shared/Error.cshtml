@@ -1,0 +1,62 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="row g-5 justify-content-md-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title fw-bold">Error</h4>
+                <div class="card-subtitle text-danger">An error occurred while processing your request.</div>
+                <hr />
+                <div class="card-text">
+                    @if (Model?.ShowRequestId ?? false)
+                    {
+                        <div class="row">
+                            <div class="col-md-2 fw-bold border-end">
+                                Request ID:
+                            </div>
+                            <div class="col-md-10">
+                                <code>@Model?.RequestId</code>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <br />
+                <div class="card-text">
+                    <div class="row">
+                        <div class="col-md-2 fw-bold border-end">
+                            Time:
+                        </div>
+                        <div class="col-md-10">
+                            <code>@Model?.Time</code>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="card-text">
+                    <div class="row">
+                        <div class="col-md-2 fw-bold border-end">
+                            Path:
+                        </div>
+                        <div class="col-md-10">
+                            <code>@Model?.Path</code>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="card-text">
+                    <div class="row">
+                        <div class="col-md-2 fw-bold border-end">
+                            Message:
+                        </div>
+                        <div class="col-md-10">
+                            <code>@Model?.ExceptionMessage</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

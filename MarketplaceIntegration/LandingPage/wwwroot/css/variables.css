@@ -1,0 +1,27 @@
+﻿:root {
+    /* layout properties */
+    --brand-primary: #0A3443; /* brand primary color */
+    --brand-secondary: white; /* brand secondary color */
+    --header-bg-color: var(--brand-primary); /* header background color */
+    --footer-bg-color: var(--brand-primary); /* footer background color */
+    --font-primary: 'Open Sans', sans-serif; /* by default Open Sans is used from Google fonts CDN - change in Views/_Layout.cshtml */
+    --bg-color: linear-gradient(90deg, rgba(221,221,221,1) 0%, rgba(233,233,233,1) 35%, rgba(247,247,247,1) 100%); /* main background color if no image */
+    --footer-text-color: white; /* text color in footer */
+    --footer-link-color: var(--brand-secondary); /* link color in footer */
+    /* landing page form */
+    --form-bg-color: var(--brand-primary); /* form background color */
+    --form-text-color: white; /* form field text color */
+    --form-header-color: white; /* form header 'Configure subscription' text color */
+    --form-border: 1px solid #fff; /* optional border around the form */
+    --form-border-radius: 8px; /* rounded form corners by default, change to 0 for square */
+    --form-box-shadow: 2px 2px rgba(0,0,0,0.4); /* small drop shadow on form by default */
+    --submit-button-bg-color: #B3D334; /* the background color for submit button */
+    --submit-button-text-color: BLACK; /* the text color for the submit button */
+    --submit-button-border: none; /* if the submit button should have a border */
+    --submit-button-width: 120px; /* the width the submit button should stretch */
+    /* images */
+    --background-image: url('../images/background.png'); /* example usage: url('../images/bg.jpg'); */
+    --logo-url: url('../images/white_logo.png'); /* example usage: url('../images/logo.png'); */
+    --logo-height: 100px; /* set the logo height */
+    --logo-width: 300px; /* set the logo width */
+}
